@@ -1,0 +1,26 @@
+--cpu=Cortex-M4.fp.sp
+"usb_to_dyn\startup_stm32f411xe.o"
+"usb_to_dyn\main.o"
+"usb_to_dyn\stm32f4xx_it.o"
+"usb_to_dyn\stm32f4xx_hal_msp.o"
+"usb_to_dyn\stm32f4xx_hal_tim.o"
+"usb_to_dyn\stm32f4xx_hal_tim_ex.o"
+"usb_to_dyn\stm32f4xx_hal_uart.o"
+"usb_to_dyn\stm32f4xx_hal_rcc.o"
+"usb_to_dyn\stm32f4xx_hal_rcc_ex.o"
+"usb_to_dyn\stm32f4xx_hal_flash.o"
+"usb_to_dyn\stm32f4xx_hal_flash_ex.o"
+"usb_to_dyn\stm32f4xx_hal_flash_ramfunc.o"
+"usb_to_dyn\stm32f4xx_hal_gpio.o"
+"usb_to_dyn\stm32f4xx_hal_dma_ex.o"
+"usb_to_dyn\stm32f4xx_hal_dma.o"
+"usb_to_dyn\stm32f4xx_hal_pwr.o"
+"usb_to_dyn\stm32f4xx_hal_pwr_ex.o"
+"usb_to_dyn\stm32f4xx_hal_cortex.o"
+"usb_to_dyn\stm32f4xx_hal.o"
+"usb_to_dyn\stm32f4xx_hal_exti.o"
+"usb_to_dyn\system_stm32f4xx.o"
+--strict --scatter "USB_to_Dyn\USB_to_Dyn.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "USB_to_Dyn.map" -o USB_to_Dyn\USB_to_Dyn.axf
